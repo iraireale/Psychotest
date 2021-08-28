@@ -1,0 +1,32 @@
+body{
+    color:aliceblue;
+    background-color: #1c1d1c;
+    font-family: monospace;
+    margin: 50px;
+}
+#titulo{
+    color: rgb(27, 226, 27);
+    text-align: center;
+}
+#descripcion{
+    text-align: center;
+    color: rgb(27, 226, 27);
+    font-size: 18px;
+}
+#explicacion{
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+    margin-bottom: 40px;
+    background-color: #000000;
+}
+#resultado{
+    color: #000600;
+    background-color: aliceblue;
+}
+#enviar{
+    background-color: green;
+    color: white;
+    margin-top: 10px;
+    font-family: monospace;
+}
