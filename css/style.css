@@ -23,6 +23,8 @@ body{
 #resultado{
     color: #000600;
     background-color: aliceblue;
+    padding: 10px;
+    margin-top: 5px;
 }
 #enviar{
     background-color: green;
