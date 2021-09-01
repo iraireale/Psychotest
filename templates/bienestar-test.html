@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de bienestar general</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div id="containter"> 
+        
+        <header>
+            <h1 id="titulo">Test de bienestar general</h1>
+            <h3 id="descripcion">Evaluación simple del bienestar psicológico</h3>
+            <div id="explicacion">
+                <p> Te pedimos que leas con atención las siguientes frases. Marca tu respuesta en cada una 
+                    de ellas sobre la base de lo que pensaste o sentiste durante el último mes. Acordate de 
+                    que no hay respuestas buenas o malas: todas sirven ¡Ah, y no dejes frases sin responder!
+                </p>
+            </div>
+        </header>
+        <section>
+          <form name="psychoTest" onsubmit="return verificarRespuestas()" id="psychoTest">
+            <h3>1. Creo que tengo claro qué quiero hacer con mi vida.</h3>
+            <input type="radio" name="p1" value="a">a.De acuerdo. <br/>
+            <input type="radio" name="p1" value="b">b.Ni de acuerdo ni en desacuerdo. <br/>
+            <input type="radio" name="p1" value="c">c.En desacuerdo. <br/>
+    
+            <h3>2. Si algo me sale mal puedo aceptarlo, admitirlo.</h3>
+            <input type="radio" name="p2" value="a">a.De acuerdo. <br/>
+            <input type="radio" name="p2" value="b">b.Ni de acuerdo ni en desacuerdo. <br/>
+            <input type="radio" name="p2" value="c">c.En desacuerdo. <br/>
+    
+            <h3>3. Me importa pensar y reflexionar sobre qué quiero hacer en mi futuro.</h3>
+            <input type="radio" name="p3" value="a">a.De acuerdo. <br/>
+            <input type="radio" name="p3" value="b">b.Ni de acuerdo ni en desacuerdo. <br/>
+            <input type="radio" name="p3" value="c">c.En desacuerdo. <br/>
+    
+            <h3>4. Puedo decir lo que pienso sin problema.</h3>
+            <input type="radio" name="p4" value="a">a.De acuerdo. <br/>
+            <input type="radio" name="p4" value="b">b.Ni de acuerdo ni en desacuerdo. <br/>
+            <input type="radio" name="p4" value="c">c.En desacuerdo. <br/>
+    
+            <h3>5. Generalmente le caigo bien a la gente.</h3>
+            <input type="radio" name="p5" value="a">a.De acuerdo. <br/>
+            <input type="radio" name="p5" value="b">b.Ni de acuerdo ni en desacuerdo. <br/>
+            <input type="radio" name="p5" value="c">c.En desacuerdo. <br/>
+    
+            <h3>6. Siento que podré lograr las metas que me proponga.</h3>
+            <input type="radio" name="p6" value="a">a.De acuerdo. <br/>
+            <input type="radio" name="p6" value="b">b.Ni de acuerdo ni en desacuerdo. <br/>
+            <input type="radio" name="p6" value="c">c.En desacuerdo. <br/>
+    
+            <h3>7. Cuento con personas que me ayudan si lo necesito.</h3>
+            <input type="radio" name="p7" value="a">a.De acuerdo. <br/>
+            <input type="radio" name="p7" value="b">b.Ni de acuerdo ni en desacuerdo. <br/>
+            <input type="radio" name="p7" value="c">c.En desacuerdo. <br/>
+    
+            <h3>8.Creo que en general me llevo bien con la gente.</h3>
+            <input type="radio" name="p8" value="a">a.De acuerdo. <br/>
+            <input type="radio" name="p8" value="b">b.Ni de acuerdo ni en desacuerdo. <br/>
+            <input type="radio" name="p8" value="c">c.En desacuerdo. <br/>
+    
+            <h3>9. En general, hago lo que yo decido. Soy poco influenciable.</h3>
+            <input type="radio" name="p9" value="a">a.De acuerdo. <br/>
+            <input type="radio" name="p9" value="b">b.Ni de acuerdo ni en desacuerdo. <br/>
+            <input type="radio" name="p9" value="c">c.En desacuerdo. <br/>
+    
+            <h3>10. Soy una persona capaz de pensar en un proyecto para mi vida.</h3>
+            <input type="radio" name="p10" value="a">a.De acuerdo. <br/>
+            <input type="radio" name="p10" value="b">b.Ni de acuerdo ni en desacuerdo. <br/>
+            <input type="radio" name="p10" value="c">c.En desacuerdo. <br/>
+    
+            <h3>11. Puedo aceptar mis equivocaciones y tratar de mejorar.</h3>
+            <input type="radio" name="p11" value="a">a.De acuerdo. <br/>
+            <input type="radio" name="p11" value="b">b.Ni de acuerdo ni en desacuerdo. <br/>
+            <input type="radio" name="p11" value="c">c.En desacuerdo. <br/>
+    
+            <h3>12. Puedo tomar decisiones sin dudar mucho.</h3>
+            <input type="radio" name="p12" value="a">a.De acuerdo. <br/>
+            <input type="radio" name="p12" value="b">b.Ni de acuerdo ni en desacuerdo. <br/>
+            <input type="radio" name="p12" value="c">c.En desacuerdo. <br/>
+    
+            <h3>13. Encaro sin mayores problemas mis obligaciones de todos los días.</h3>
+            <input type="radio" name="p13" value="a">a.De acuerdo. <br/>
+            <input type="radio" name="p13" value="b">b.Ni de acuerdo ni en desacuerdo. <br/>
+            <input type="radio" name="p13" value="c">c.En desacuerdo. <br/>
+
+            <input id="enviar" type="submit" value="Enviar">
+            <div id="resultado"></div>
+        </form>
+        </section>
+    </div>
+    <script src="../script.js"></script>    
+</body>
+</html>
